@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Онлайн витрина – каталоги для бизнеса</title>
+  <meta name="description"
+    content="Онлайн витрина помогает малому бизнесу создать онлайн-витрину и каталог товаров без разработки сайта. Запустите продажи за 3 минуты." />
+  <meta name="keywords" content="онлайн-витрина, каталог товаров, магазин без сайта, прием заказов, Онлайн витрина" />
+  <meta name="theme-color" content="#0b0f0d" />
+  <link rel="icon" type="image/png" href="./public/logo.png" />
+  <link rel="apple-touch-icon" href="./public/logo.png" />
+  <meta property="og:title" content="Онлайн витрина — онлайн-витрины и каталоги для бизнеса" />
+  <meta property="og:description"
+    content="Публикуйте товары, принимайте заказы и делитесь каталогом без разработки сайта." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#0b0f0d",
+            card: "#111614",
+            accent: "#10b981",
+            gold: "#d4a24a",
+            line: "rgba(255,255,255,0.08)",
+          },
+          boxShadow: {
+            premium: "0 24px 80px rgba(0,0,0,0.35)",
+            soft: "0 16px 50px rgba(0,0,0,0.22)",
+          },
+          borderRadius: {
+            xl2: "1.25rem",
+            xl3: "1.5rem",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body class="bg-bg text-white antialiased selection:bg-emerald-400 selection:text-black">
+  <div class="page-shell">
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+
+    <header class="sticky top-0 z-50 border-b border-white/8 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#top" class="flex items-center gap-3">
+          <img src="./public/logo.png" alt="Онлайн витрина" class="logo-mark" />
+          <span class="font-display text-lg font-semibold tracking-[0.08em] text-white">Онлайн витрина</span>
+        </a>
+
+        <nav class="hidden items-center gap-8 text-sm text-white/72 lg:flex">
+          <a href="#features" class="nav-link">Возможности</a>
+          <a href="#how-it-works" class="nav-link">Как это работает</a>
+          <a href="#examples" class="nav-link">Примеры</a>
+          <a href="#testimonials" class="nav-link">Отзывы</a>
+        </nav>
+
+        <div class="hidden items-center gap-3 sm:flex">
+          <a href="https://store.alwib.ru" class="btn btn-ghost">Войти</a>
+          <a href="https://store.alwib.ru" class="btn btn-primary">Создать витрину</a>
+        </div>
+
+        <button
+          class="mobile-menu-button inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white sm:hidden"
+          type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Открыть меню</span>
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu border-t border-white/8 bg-[#0b0f0df2] px-4 pb-5 pt-3 sm:hidden">
+        <div class="flex flex-col gap-2 text-sm text-white/80">
+          <a href="#features" class="mobile-link">Возможности</a>
+          <a href="#how-it-works" class="mobile-link">Как это работает</a>
+          <a href="#examples" class="mobile-link">Примеры</a>
+          <a href="#testimonials" class="mobile-link">Отзывы</a>
+        </div>
+        <div class="mt-4 grid grid-cols-2 gap-3">
+          <a href="https://store.alwib.ru" class="btn btn-ghost justify-center">Войти</a>
+          <a href="https://store.alwib.ru" class="btn btn-primary justify-center">Создать витрину</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="relative overflow-hidden">
+        <div
+          class="mx-auto grid max-w-7xl gap-14 px-4 pb-20 pt-12 sm:px-6 sm:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-28 lg:pt-16">
+          <div class="flex flex-col justify-center">
+            <div
+              class="reveal inline-flex w-fit items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-100">
+              <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+              Платформа уже работает и доступна прямо сейчас
+            </div>
+
+            <h1
+              class="reveal mt-8 max-w-3xl font-display text-4xl font-semibold leading-[1.02] text-white sm:text-5xl lg:text-7xl">
+              Создайте онлайн-витрину за 3 минуты
+            </h1>
+
+            <p class="reveal mt-6 max-w-2xl text-base leading-8 text-white/72 sm:text-lg">
+              Публикуйте товары, принимайте заказы и делитесь каталогом без разработки сайта.
+            </p>
+
+            <div class="reveal mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a href="https://store.alwib.ru" class="btn btn-primary btn-lg">Создать витрину бесплатно</a>
+              <a href="https://store.alwib.ru/sovgat" class="btn btn-secondary btn-lg">Посмотреть демо</a>
+            </div>
+
+            <ul class="reveal mt-8 flex flex-col gap-3 text-sm text-white/70 sm:flex-row sm:flex-wrap sm:gap-5">
+              <li class="inline-flex items-center gap-2">
+                <span class="check-mark">✓</span>
+                Без программиста
+              </li>
+              <li class="inline-flex items-center gap-2">
+                <span class="check-mark">✓</span>
+                Запуск за 3 минуты
+              </li>
+              <li class="inline-flex items-center gap-2">
+                <span class="check-mark">✓</span>
+                Бесплатный тестовый период
+              </li>
+            </ul>
+
+            <div class="reveal mt-10 grid gap-4 sm:grid-cols-3">
+              <article class="metric-card">
+                <div class="text-2xl font-extrabold text-white">500+</div>
+                <div class="mt-1 text-sm text-white/60">магазинов уже продают через витрину</div>
+              </article>
+              <article class="metric-card">
+                <div class="text-2xl font-extrabold text-white">15 000+</div>
+                <div class="mt-1 text-sm text-white/60">товаров размещено в каталогах</div>
+              </article>
+              <article class="metric-card">
+                <div class="text-2xl font-extrabold text-white">24/7</div>
+                <div class="mt-1 text-sm text-white/60">доступ к заказам и клиентским заявкам</div>
+              </article>
+            </div>
+          </div>
+
+          <div class="relative flex items-center justify-center">
+            <div class="hero-glow"></div>
+
+            <div class="status-card status-left-top reveal">
+              <div class="status-icon emerald"></div>
+              <div>
+                <div class="text-sm font-semibold text-white">Новый заказ</div>
+                <div class="text-xs text-white/55">3 позиции · 8 490 ₽</div>
+              </div>
+            </div>
+
+            <div class="status-card status-right-top reveal">
+              <div class="status-icon gold"></div>
+              <div>
+                <div class="text-sm font-semibold text-white">127 посетителей</div>
+                <div class="text-xs text-white/55">за последние 24 часа</div>
+              </div>
+            </div>
+
+            <div class="status-card status-left-bottom reveal">
+              <div class="status-icon emerald"></div>
+              <div>
+                <div class="text-sm font-semibold text-white">48 товаров</div>
+                <div class="text-xs text-white/55">в каталоге магазина</div>
+              </div>
+            </div>
+
+            <div class="status-card status-right-bottom reveal">
+              <div class="status-icon emerald pulse"></div>
+              <div>
+                <div class="text-sm font-semibold text-white">Магазин онлайн</div>
+                <div class="text-xs text-white/55">ссылка готова для клиентов</div>
+              </div>
+            </div>
+
+            <div class="phone-frame reveal">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="screen-top">
+                  <div>
+                    <div class="text-xs uppercase tracking-[0.25em] text-gold/80">Витрина</div>
+                    <div class="mt-2 text-xl font-bold text-white">Магазин</div>
+                  </div>
+                  <div class="screen-badge">Онлайн</div>
+                </div>
+
+                <label class="search-box">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="M20 20l-3.5-3.5" stroke-linecap="round"></path>
+                  </svg>
+                  <span>Поиск по каталогу</span>
+                </label>
+
+                <div class="filter-row">
+                  <span class="filter-pill active">Хиты</span>
+                  <span class="filter-pill">Подарки</span>
+                  <span class="filter-pill">Новинки</span>
+                  <span class="filter-pill">Наборы</span>
+                </div>
+
+                <div class="space-y-3">
+                  <article class="product-card featured">
+                    <div class="product-image image-1"></div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-sm font-semibold text-white">Премиальный бокс</div>
+                      <div class="mt-1 text-xs leading-5 text-white/60">Корпоративный подарок с брендированием и
+                        доставкой</div>
+                      <div class="mt-3 flex items-center justify-between">
+                        <span class="text-sm font-bold text-gold">4 990 ₽</span>
+                        <span class="mini-chip">В корзину</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-image image-2"></div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-sm font-semibold text-white">Кожаный ежедневник</div>
+                      <div class="mt-1 text-xs leading-5 text-white/60">Подарочная упаковка, тиснение, оптовые заказы
+                      </div>
+                      <div class="mt-3 flex items-center justify-between">
+                        <span class="text-sm font-bold text-gold">2 390 ₽</span>
+                        <span class="mini-chip">Заказать</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-image image-3"></div>
+                    <div class="min-w-0 flex-1">
+                      <div class="text-sm font-semibold text-white">Набор аксессуаров</div>
+                      <div class="mt-1 text-xs leading-5 text-white/60">Для партнеров, мероприятий и подарочных наборов
+                      </div>
+                      <div class="mt-3 flex items-center justify-between">
+                        <span class="text-sm font-bold text-gold">3 700 ₽</span>
+                        <span class="mini-chip">Подробнее</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div style="margin-top: 12px;" class="grid grid-cols-3 gap-3">
+                  <div class="phone-stat">
+                    <span class="text-base font-bold text-white">14</span>
+                    <span class="text-[11px] text-white/55">заявок</span>
+                  </div>
+                  <div class="phone-stat">
+                    <span class="text-base font-bold text-white">89%</span>
+                    <span class="text-[11px] text-white/55">просмотры</span>
+                  </div>
+                  <div class="phone-stat">
+                    <span class="text-base font-bold text-white">3 мин</span>
+                    <span class="text-[11px] text-white/55">запуск</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-white/6 bg-white/[0.02]">
+        <div class="mx-auto grid max-w-7xl gap-6 px-4 py-8 text-sm text-white/60 sm:px-6 md:grid-cols-3 lg:px-8">
+          <div class="reveal trust-line">
+            <span class="trust-label">Быстрый старт</span>
+            Откройте приложение и опубликуйте первую витрину за несколько минут.
+          </div>
+          <div class="reveal trust-line">
+            <span class="trust-label">Реальный продукт</span>
+            Клиент видит живой каталог, а не форму заявки на разработку сайта.
+          </div>
+          <div class="reveal trust-line">
+            <span class="trust-label">Подходит бизнесу</span>
+            Для магазинов, шоурумов, поставщиков и локальных брендов.
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="section-kicker reveal">Возможности</p>
+          <h2 class="reveal mt-4 font-display text-3xl font-semibold text-white sm:text-5xl">
+            Всё необходимое для онлайн-продаж
+          </h2>
+        </div>
+
+        <div class="mt-14 grid gap-6 lg:grid-cols-3">
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M4 7h16M7 4v16M17 4v16M4 17h16" stroke-linecap="round"></path>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-2xl font-semibold text-white">Каталог товаров</h3>
+            <p class="mt-4 text-base leading-7 text-white/68">Добавляйте товары за секунды.</p>
+            <div class="preview-grid mt-8">
+              <div class="preview-box bg-emerald-500/10"></div>
+              <div class="preview-box bg-gold/15"></div>
+              <div class="preview-box bg-white/8"></div>
+              <div class="preview-box bg-emerald-500/10"></div>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M6 12h12M12 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-2xl font-semibold text-white">Управление заказами</h3>
+            <p class="mt-4 text-base leading-7 text-white/68">Получайте заявки и заказы в одном месте.</p>
+            <div class="order-stack mt-8">
+              <div class="order-line">
+                <span>Новая заявка</span>
+                <span class="text-emerald-300">2 мин назад</span>
+              </div>
+              <div class="order-line">
+                <span>Подтверждение</span>
+                <span class="text-gold">Оплачен</span>
+              </div>
+              <div class="order-line">
+                <span>Доставка</span>
+                <span class="text-white/70">В работе</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M4 18l5-6 4 3 7-9" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <h3 class="mt-8 text-2xl font-semibold text-white">Аналитика</h3>
+            <p class="mt-4 text-base leading-7 text-white/68">
+              Следите за популярностью товаров и эффективностью витрины.
+            </p>
+            <div class="analytics-graph mt-8">
+              <span style="height: 42%"></span>
+              <span style="height: 68%"></span>
+              <span style="height: 55%"></span>
+              <span style="height: 88%"></span>
+              <span style="height: 72%"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="section-kicker reveal">Путь запуска</p>
+          <h2 class="reveal mt-4 font-display text-3xl font-semibold text-white sm:text-5xl">Как это работает</h2>
+        </div>
+
+        <div class="timeline mt-14">
+          <article class="timeline-step reveal">
+            <span class="timeline-dot">1</span>
+            <h3>Создайте витрину</h3>
+            <p>Выберите название, оформление и получите ссылку магазина.</p>
+          </article>
+          <article class="timeline-step reveal">
+            <span class="timeline-dot">2</span>
+            <h3>Добавьте товары</h3>
+            <p>Загрузите фото, цены, описания и категории в пару кликов.</p>
+          </article>
+          <article class="timeline-step reveal">
+            <span class="timeline-dot">3</span>
+            <h3>Поделитесь ссылкой</h3>
+            <p>Отправьте каталог в мессенджеры, соцсети или клиентскую базу.</p>
+          </article>
+          <article class="timeline-step reveal">
+            <span class="timeline-dot">4</span>
+            <h3>Получайте заказы</h3>
+            <p>Принимайте заявки, отслеживайте интерес и работайте с клиентами.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="examples" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="section-kicker reveal">Готовые сценарии</p>
+          <h2 class="reveal mt-4 font-display text-3xl font-semibold text-white sm:text-5xl">Примеры витрин</h2>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="store-card reveal">
+            <div class="store-cover store-cover-souvenir"></div>
+            <div class="mt-6 flex items-center justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-white">Сувениры</h3>
+                <p class="mt-2 text-sm text-white/62">Подарочные наборы, мерч и корпоративные заказы.</p>
+              </div>
+              <span class="store-chip">124 товара</span>
+            </div>
+            <div class="mini-store-grid mt-6">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </article>
+
+          <article class="store-card reveal">
+            <div class="store-cover store-cover-fashion"></div>
+            <div class="mt-6 flex items-center justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-white">Одежда</h3>
+                <p class="mt-2 text-sm text-white/62">Коллекции, размеры, новинки и капсульные дропы.</p>
+              </div>
+              <span class="store-chip">86 товаров</span>
+            </div>
+            <div class="mini-store-grid mt-6">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </article>
+
+          <article class="store-card reveal">
+            <div class="store-cover store-cover-auto"></div>
+            <div class="mt-6 flex items-center justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-white">Автозапчасти</h3>
+                <p class="mt-2 text-sm text-white/62">Каталог по категориям, артикулам и наличию на складе.</p>
+              </div>
+              <span class="store-chip">310 товаров</span>
+            </div>
+            <div class="mini-store-grid mt-6">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </article>
+
+          <article class="store-card reveal">
+            <div class="store-cover store-cover-furniture"></div>
+            <div class="mt-6 flex items-center justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-white">Мебель</h3>
+                <p class="mt-2 text-sm text-white/62">Подборки для интерьера, материалы и варианты комплектации.</p>
+              </div>
+              <span class="store-chip">59 товаров</span>
+            </div>
+            <div class="mini-store-grid mt-6">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+        <div
+          class="stats-panel reveal grid gap-6 rounded-[28px] px-6 py-10 sm:grid-cols-2 sm:px-8 lg:grid-cols-4 lg:px-10">
+          <article>
+            <div class="text-4xl font-extrabold text-white sm:text-5xl">500+</div>
+            <div class="mt-3 text-sm uppercase tracking-[0.18em] text-emerald-100/80">магазинов</div>
+          </article>
+          <article>
+            <div class="text-4xl font-extrabold text-white sm:text-5xl">15000+</div>
+            <div class="mt-3 text-sm uppercase tracking-[0.18em] text-emerald-100/80">товаров</div>
+          </article>
+          <article>
+            <div class="text-4xl font-extrabold text-white sm:text-5xl">98%</div>
+            <div class="mt-3 text-sm uppercase tracking-[0.18em] text-emerald-100/80">довольных пользователей</div>
+          </article>
+          <article>
+            <div class="text-4xl font-extrabold text-white sm:text-5xl">24/7</div>
+            <div class="mt-3 text-sm uppercase tracking-[0.18em] text-emerald-100/80">поддержка</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="testimonials" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="section-kicker reveal">Отзывы</p>
+          <h2 class="reveal mt-4 font-display text-3xl font-semibold text-white sm:text-5xl">Что говорят клиенты</h2>
+        </div>
+
+        <div class="mt-14 grid gap-6 lg:grid-cols-3">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-head">
+              <div class="avatar avatar-1"></div>
+              <div>
+                <div class="font-semibold text-white">Елена Смирнова</div>
+                <div class="text-sm text-white/55">Основатель магазина подарков</div>
+              </div>
+            </div>
+            <p class="mt-6 text-base leading-7 text-white/70">
+              «Мы запустили витрину в тот же день, когда решили протестировать онлайн-продажи. Клиенты сразу начали
+              оформлять заявки по ссылке из мессенджера».
+            </p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-head">
+              <div class="avatar avatar-2"></div>
+              <div>
+                <div class="font-semibold text-white">Максим Орлов</div>
+                <div class="text-sm text-white/55">Руководитель шоурума одежды</div>
+              </div>
+            </div>
+            <p class="mt-6 text-base leading-7 text-white/70">
+                «Онлайн витрина заменила нам долгую разработку сайта. Коллекции выглядят аккуратно, а обновлять каталог можно
+              хоть каждый день без участия подрядчика».
+            </p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-head">
+              <div class="avatar avatar-3"></div>
+              <div>
+                <div class="font-semibold text-white">Артур Ганиев</div>
+                <div class="text-sm text-white/55">Владелец магазина автотоваров</div>
+              </div>
+            </div>
+            <p class="mt-6 text-base leading-7 text-white/70">
+              «Самое ценное — ссылка на реальный каталог. Менеджеры отправляют её клиентам, и те сразу видят наличие,
+              цены и подборки по категориям».
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
+        <div class="cta-panel reveal rounded-[32px] px-6 py-12 sm:px-10 lg:px-14 lg:py-16">
+          <div class="max-w-3xl">
+            <p class="section-kicker text-emerald-100/80">Начните сегодня</p>
+            <h2 class="mt-4 font-display text-3xl font-semibold text-white sm:text-5xl">
+              Ваш магазин может начать продавать уже сегодня
+            </h2>
+            <p class="mt-5 max-w-2xl text-base leading-8 text-emerald-50/82 sm:text-lg">
+              Создайте онлайн-витрину за несколько минут и покажите свои товары клиентам.
+            </p>
+          </div>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="https://store.alwib.ru" class="btn btn-light btn-lg">Создать витрину бесплатно</a>
+            <a href="https://store.alwib.ru" class="btn btn-outline-light btn-lg">Открыть приложение</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
