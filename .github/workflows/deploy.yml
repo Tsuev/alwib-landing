@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            mkdir -p /var/www/store.alwib.ru
+            mkdir -p /var/www/alwib.ru
 
       - name: Deploy static files
         uses: appleboy/scp-action@v0.1.7
@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           source: "index.html,styles.css,script.js,public"
-          target: "/var/www/store.alwib.ru"
+          target: "/var/www/alwib.ru"
           rm: true
 
       - name: Reload nginx
